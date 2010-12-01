@@ -1,4 +1,4 @@
-%w{ rubygems erb em-websocket uuid mq thin  }.each {|gem| require gem}
+%w{ rubygems erb em-websocket uuid mq thin json geoiq-gem }.each {|gem| require gem}
 require File.dirname(__FILE__) +'/vendor/rack/lib/rack'
 require File.dirname(__FILE__) +'/vendor/sinatra/lib/sinatra'
 require File.dirname(__FILE__) +'/vendor/sinatra/lib/sinatra/base'
@@ -18,6 +18,16 @@ EventMachine.run do
     get '/' do
       erb :index
     end
+    
+    get '/comments/:id.json' do
+      dataset = Geoiq::Dataset.load(params[:id])
+      params.delete :id
+
+      content_type :json
+
+      dataset.features(params).to_json
+    end
+    
   end
 
   # 

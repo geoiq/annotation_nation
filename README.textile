@@ -9,6 +9,13 @@ h3. Gems
 
 # sudo gem install em-websocket 
 
+h3. GeoIQ Ruby gem
+
+# git clone git@github.com:fortiusone/geoiq-ruby.git
+# cd geoiq-ruby
+# bundle install
+# sudo rake install
+
 h3. EventMachine HTTP Server
 
 # git clone https://github.com/eventmachine/evma_httpserver.git
