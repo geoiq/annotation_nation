@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="100"
+   height="100"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="balloonIcon_shadow.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <metadata
+     id="metadata6748">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     inkscape:window-height="713"
+     inkscape:window-width="640"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     showgrid="false"
+     inkscape:zoom="4.98"
+     inkscape:cx="50"
+     inkscape:cy="58.061336"
+     inkscape:window-x="58"
+     inkscape:window-y="15"
+     inkscape:current-layer="svg2" />
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 50 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="100 : 50 : 1"
+       inkscape:persp3d-origin="50 : 33.333333 : 1"
+       id="perspective6750" />
+    <linearGradient
+       id="linearGradient3305">
+      <stop
+         style="stop-color:#aaaaaa;stop-opacity:1;"
+         offset="0"
+         id="stop3307" />
+      <stop
+         style="stop-color:#767676;stop-opacity:1;"
+         offset="1"
+         id="stop3309" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient3305"
+       id="linearGradient3311"
+       x1="48.392857"
+       y1="8.3928566"
+       x2="48.650654"
+       y2="72.85714"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     id="layer1"
+     transform="matrix(0.4953899,0,0,0.4953899,24.65211,0.7714826)">
+    <path
+       style="opacity:1;fill:#000000;fill-opacity:0.37777782;stroke:none;stroke-width:15.57499981;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 63.655381,49.502158 C 54.701844,49.502158 47.434107,55.202491 47.434105,62.227901 C 47.434105,66.294508 49.871482,69.909946 53.658817,72.240439 L 49.902392,96.699781 L 63.740228,74.953644 C 72.65452,74.917519 79.876658,69.230954 79.876658,62.227901 C 79.876658,55.202494 72.608921,49.502152 63.655381,49.502158 z"
+       id="shadow1" />
+    <path
+       style="fill:url(#linearGradient3311);fill-opacity:1;stroke:#ffffff;stroke-width:4.78198624;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 48.650652,2.7260486 C 34.488247,2.7260486 22.991219,14.180466 22.991215,28.295659 C 22.991215,39.143158 29.785106,48.421987 39.355967,52.135869 L 48.305279,94.960328 L 57.315539,52.370369 C 67.216741,48.825119 74.310099,39.379405 74.31009,28.295659 C 74.31009,14.180458 62.813056,2.7260486 48.650652,2.7260486 z"
+       id="icon" />
+  </g>
+</svg>

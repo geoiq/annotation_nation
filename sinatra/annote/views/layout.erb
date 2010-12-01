@@ -12,11 +12,13 @@
 
   <script type="text/javascript" charset="utf-8" src="http://geoiq.vm/javascripts/f1.api.js"></script>
   <script type="text/javascript" charset="utf-8">
-    map = new F1.Maker.Map({map_id: "40", dom_id: "map"});
+   $(function(){
+      map = new F1.Maker.Map({
+        map_id: "40", 
+        dom_id: "map"
+      });
+   })
   </script>
-
-  <style>#maker_map_38643 {width: 100%; height: 400px;}</style>
-  
 
   <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="f1.css" type="text/css" media="screen" title="no title" charset="utf-8">
@@ -71,6 +73,7 @@
     <ul>
       <li class="draggable_tab"><a href="#tab_article">Article</a></li>
       <li class="draggable_tab"><a href="#tab_comments">Comments <span class="count">(23)</span></a></li>
+      <li class="draggable_tab"><a href="#tab_slides">Slides</a></li>
     </ul>
 
     <div id="tab_article" class="tab_article">
@@ -78,6 +81,9 @@
     </div>
     <div id="tab_comments" class="tab_comments">
       <%= yield  %>
+    </div>
+    <div id="tab_slides" class="tab_slides">
+      <div id="slides"></div>
     </div>
   </div>
   
@@ -97,7 +103,7 @@
 <div class="f1-layout-south">
 	<div class="lower_tabs">
 
-    <div id="tab-1">Stuff</div>
+    <div id="tab-1">Stuffs</div>
     <div id="tab-2">More Stuffs</div>
 	  <ul>
       <li><a href="#tab-1"><img src="images/clock-select.png"/>Stuff</a></li>
@@ -124,7 +130,8 @@ var myLayout; // a var is required because this page utilizes: myLayout.allowOve
 
 $(document).ready(function () {
 	new F1.Layout({})
-	new F1.Article({})
+	new F1.Article({id: 'article', article_id: '1'})
+	new F1.Article({id: 'slides', article_id: '2'})
 });
 
 </script>
