@@ -23,5 +23,6 @@ AMQP.start(:host => 'localhost') do
       geocommons.publish(feature.to_json) 
     end unless features == last_features
     last_features = features
+
   }
 end

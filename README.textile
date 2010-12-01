@@ -1,13 +1,30 @@
+h1. AnnotationNation!
+
+AnnotationNation_!_ is a demonstration application built by FortiusOne at our 2010 developer retreat. It is an example of realtime visualization and collaboration.
+
 h2. Code
 
-git@github.com:fortiusone/annotation_nation.git
+You've found this README, so you probably already have the code. In case you don't, you can get it from the Github repository:
 
+ git clone git@github.com:fortiusone/annotation_nation.git
 
 h2. Dependencies
 
+* EventMachine
+* RabbitMQ
+* Thin (web server)
+* Sinatra
+* GeoIQ
+
 h3. Gems
 
-# sudo gem install em-websocket 
+Add RubyGems to your gem sources if you don't have it:
+
+  gem sources -a http://rubyserver.org
+  
+Then install the following gems:
+
+  sudo gem install em-websocket uuid amqp thin
 
 h3. GeoIQ Ruby gem
 
@@ -16,23 +33,13 @@ h3. GeoIQ Ruby gem
 # bundle install
 # sudo rake install
 
-h3. EventMachine HTTP Server
-
-# git clone https://github.com/eventmachine/evma_httpserver.git
-# cd evma_httpserver.git
-# rake gem:build
-# sudo rake gem:install
-
 h3. RabbitMQ
 
-http://www.rabbitmq.com/server.html
-https://github.com/tmm1/amqp
+RabbitMQ is used as the message queue. You will have to install it. Follow the directions at http://www.rabbitmq.com/server.html
 
-h3. Examples:
+h2. Running AnnotationNation!
 
-https://github.com/rubenfonseca/twitter-amqp-websocket-example
-
-h2. Startup
+The following are three (3) seperate servers to startup
 
 h3. RabbitMQ server
 
