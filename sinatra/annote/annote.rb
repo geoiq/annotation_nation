@@ -2,7 +2,6 @@
 require File.dirname(__FILE__) +'/vendor/rack/lib/rack'
 require File.dirname(__FILE__) +'/vendor/sinatra/lib/sinatra'
 require File.dirname(__FILE__) +'/vendor/sinatra/lib/sinatra/base'
-enable :inline_templates
 
 uuid = UUID.new
 
@@ -11,6 +10,9 @@ EventMachine.run do
   # SINATRA
   # 
   class App < Sinatra::Base
+    enable :inline_templates
+    set :views, File.dirname(__FILE__) + '/views'
+    
     get '/hi' do
       "Hello World!"
     end
