@@ -47,7 +47,9 @@ h3. RabbitMQ server
 
 h3. GeoIQ data server 
 
-  _~/annotation_nation $_ ruby dataserver.rb 1 5
+Start the dataserver and include the GeoIQ dataset id, the update rate in seconds, and the name of the timestamp attribute.
+
+  _~/annotation_nation $_ ruby dataserver.rb 1 5 timestamp
 
 h3. Web server
 
