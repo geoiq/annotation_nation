@@ -26,8 +26,14 @@ EventMachine.run do
       params.delete :id
 
       content_type :json
-
       dataset.features(params).to_json
+    end
+    
+    post '/comments/:id.json' do
+      dataset = Geoiq::Dataset.load(params[:id])
+      params.delete :id
+      
+      dataset.add(params[:features])
     end
     
   end
