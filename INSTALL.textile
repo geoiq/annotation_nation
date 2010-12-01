@@ -1,0 +1,30 @@
+h2. Code
+
+git@github.com:fortiusone/annotation_nation.git
+
+
+h2. Dependencies
+
+h3. Gems
+
+# sudo gem install em-websocket 
+
+h3. EventMachine HTTP Server
+
+# git clone https://github.com/eventmachine/evma_httpserver.git
+# cd evma_httpserver.git
+# rake gem:build
+# sudo rake gem:install
+
+h3. RabbitMQ
+
+http://www.rabbitmq.com/server.html
+
+h3. Examples:
+
+https://github.com/rubenfonseca/twitter-amqp-websocket-example
+
+h2. Startup
+
+# sudo scripts/rabbitmq-server
+
