@@ -27,8 +27,14 @@ EventMachine.run do
       params.delete :id
 
       content_type :json
-
       dataset.features(params).to_json
+    end
+    
+    post '/comments/:id.json' do
+      dataset = Geoiq::Dataset.load(params[:id])
+      params.delete :id
+      
+      dataset.add(params[:features])
     end
     
   end
@@ -53,9 +59,7 @@ EventMachine.run do
   end
   
   
-  puts "going to be running"
   App.run!({:port => 3000})
-  puts "Running!"
 end
 
 
