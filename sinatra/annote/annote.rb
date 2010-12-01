@@ -12,6 +12,7 @@ EventMachine.run do
   class App < Sinatra::Base
     enable :inline_templates
     set :views, File.dirname(__FILE__) + '/views'
+    set :public, File.dirname(__FILE__) + '/public'
     
     get '/hi' do
       "Hello World!"
@@ -26,8 +27,14 @@ EventMachine.run do
       params.delete :id
 
       content_type :json
-
       dataset.features(params).to_json
+    end
+    
+    post '/comments/:id.json' do
+      dataset = Geoiq::Dataset.load(params[:id])
+      params.delete :id
+      
+      dataset.add(params[:features])
     end
     
   end
