@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	<title>Simple Layout Demo</title>
+
+	<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="jquery-ui-1.8.6.custom.min.js"></script>
+	<script type="text/javascript" src="jquery.layout.js"></script>
+	<script type="text/javascript" src="f1.layout.js"></script>
+	<script type="text/javascript" src="f1.article.js"></script>
+
+  <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="f1.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="maker.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="jquery-ui-1.8.6.custom.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <!-- <link rel="stylesheet" href="jquery-ui-1.7.2.custom.css" type="text/css" media="screen" title="no title" charset="utf-8"> -->
+  
+  
+	<script type="text/javascript">
+
+	var myLayout; // a var is required because this page utilizes: myLayout.allowOverflow() method
+
+	$(document).ready(function () {
+		new F1.Layout({})
+		new F1.Article({})
+ 	});
+
+	</script>
+
+</head>
+<body>
+
+
+
+
+<!-- Header -->
+<div class="f1-layout-north">
+  <div class="al_r env_appliance" id="header_master">
+    <div class="l">
+      <!-- <a href="http://geoiq.vm/"><img src="images/logo.geocommons.png?1290032914" id="mhlogo" class="mhimg" alt="Logo" name="mhlogo"></a> -->
+    </div>
+    <div class="r">
+      <div class="fl_r mhmid logged_in" id="user_header">
+        <div class="rr" id="mh_info">
+          <div style="display: none;" id="logged_out_notice">
+            <div class="mh_signin_links">
+              New user? <a class="show_signup" href="http://geoiq.vm/register">Sign up</a> | <a class="show_login" href="http://geoiq.vm/login">Sign in</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="toolbar" class="al_r">
+    <div class="l title">Black Friday Analysis</div>
+    <!-- <div class="r"><img src="images/tmp.view_toggle.png">&nbsp;&nbsp;<img src="images/tmp.save.png">&nbsp;&nbsp;<img src="images/tmp.preview.png"></div> -->
+  </div>
+</div>
+
+
+<!-- <div class="f1-layout-west droppable_vertical">  
+  <div class="panel_tabs">
+    <ul>
+      <li class="draggable_tab"><a href="#refinements">Refinements</a></li>
+    </ul>
+
+    <div id="refinements"><img src="images/temp.refinements.png"></div>
+  </div>
+</div> -->
+
+<div class="f1-layout-east droppable_vertical">  
+  <div class="panel_tabs">
+    <ul>
+      <li class="draggable_tab"><a href="#layers">Article</a></li>
+      <li class="draggable_tab"><a href="#histogram">Comments <span class="count">(23)</span></a></li>
+    </ul>
+
+    <div id="layers" class="layers">
+      <div id="article" class="article_text">Loading...</div>
+    </div>
+    <div id="histogram" class="histogram">[Histogram]</div>
+  </div>
+  
+
+  <!-- <div class="panel layers draggable_vertical ui-corner-top">
+    Layers
+  </div>
+  <div class="panel layers draggable_vertical ui-corner-top">
+    Histogram
+  </div>
+  <div class="panel layers draggable_vertical ui-corner-top">
+    Aggregation
+  </div> -->
+  
+</div>
+
+<div class="f1-layout-south">
+	<div class="lower_tabs">
+
+    <div id="tab-1">Stuff</div>
+    <div id="tab-2">More Stuffs</div>
+	  <ul>
+      <li><a href="#tab-1"><img src="images/clock-select.png"/>Stuff</a></li>
+      <li><a href="#tab-2"><img src="images/table.png"/>More Stuffs</a></li>
+    </ul>	
+  </div>
+</div>
+
+
+<div class="f1-layout-center">
+  <div class="fake_map"></div>
+</div>
+
+<div class="f1-north-holder f1-holder"></div>
+<div class="f1-south-holder f1-holder"></div>
+<div class="f1-east-holder f1-holder"></div>
+<div class="f1-west-holder f1-holder"></div>
+<div class="f1-center-holder f1-holder"></div>
+
+</body>
+</html>
