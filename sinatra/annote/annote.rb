@@ -21,6 +21,10 @@ EventMachine.run do
     get '/' do
       erb :index
     end
+
+    get '/article/:id' do
+      erb :index
+    end
     
     get '/comments/:id.json' do
       dataset = Geoiq::Dataset.load(params[:id])
