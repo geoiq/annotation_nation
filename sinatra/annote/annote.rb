@@ -3,6 +3,7 @@ require 'vendor/rack/lib/rack'
 require 'vendor/sinatra/lib/sinatra'
 require 'erb'
 require 'geoiq-gem'
+require 'json'
 enable :inline_templates
 
 get '/hi' do
@@ -11,6 +12,12 @@ end
 
 get '/' do
   erb :index
+end
+
+get '/comments/:id' do
+  dataset = Geoiq::Dataset.load(params[:id])
+  content_type :json
+  dataset.features.to_json
 end
 
 
