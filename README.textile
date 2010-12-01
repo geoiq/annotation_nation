@@ -47,7 +47,9 @@ h3. RabbitMQ server
 
 h3. GeoIQ data server 
 
-  _~/annotation_nation $_ ruby dataserver.rb 1 5
+  _~/annotation_nation $_ ruby dataserver.rb 1 5 time_attribute
+  
+  where time_attribute is the attribute name in the feature  
 
 h3. Web server
 
