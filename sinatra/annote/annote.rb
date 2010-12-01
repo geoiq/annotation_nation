@@ -52,9 +52,7 @@ EventMachine.run do
   end
   
   
-  puts "going to be running"
   App.run!({:port => 3000})
-  puts "Running!"
 end
 
 

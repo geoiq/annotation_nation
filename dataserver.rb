@@ -12,13 +12,15 @@ AMQP.start(:host => 'localhost') do
     puts last_updated.strftime('%Y-%m-%dT%H:%M:%S%z')
     
     # features = Geoiq::Features(dataset_id, :timestamp => last_updated.strftime('%Y-%m-%dT%H:%M:%S%z'))
+    # Call to GeoIQ for the dataset that we're listening on
+    dataset = Geoiq::Dataset.load(dataset_id)
     last_updated = Time.now
         
-    # Call to GeoIQ for the dataset that we're listening on
-    features = [{:name => "First Feature", :timestamp => last_updated.strftime('%Y-%m-%dT%H:%M:%S%z')}]
-
-    features.each do |feature|
-      geocommons.publish(feature.to_json)
-    end
+    # features = [{:name => "First Feature", :timestamp => last_updated.strftime('%Y-%m-%dT%H:%M:%S%z')}]
+    
+    geocommons.publish(dataset.features(params).to_json)
+    # features.each do |feature|
+    #   geocommons.publish(feature.to_json)
+    # end
   }
 end
