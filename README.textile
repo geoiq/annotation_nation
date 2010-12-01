@@ -1,0 +1,47 @@
+h2. Code
+
+git@github.com:fortiusone/annotation_nation.git
+
+
+h2. Dependencies
+
+h3. Gems
+
+# sudo gem install em-websocket 
+
+h3. GeoIQ Ruby gem
+
+# git clone git@github.com:fortiusone/geoiq-ruby.git
+# cd geoiq-ruby
+# bundle install
+# sudo rake install
+
+h3. EventMachine HTTP Server
+
+# git clone https://github.com/eventmachine/evma_httpserver.git
+# cd evma_httpserver.git
+# rake gem:build
+# sudo rake gem:install
+
+h3. RabbitMQ
+
+http://www.rabbitmq.com/server.html
+https://github.com/tmm1/amqp
+
+h3. Examples:
+
+https://github.com/rubenfonseca/twitter-amqp-websocket-example
+
+h2. Startup
+
+h3. RabbitMQ server
+
+  _~/rabbitmq $_ sudo scripts/rabbitmq-server
+
+h3. GeoIQ data server 
+
+  _~/annotation_nation $_ ruby dataserver.rb 1 5
+
+h3. Web server
+
+  _~/annotation_nation $_ ruby sinatra/annote/annote.rb

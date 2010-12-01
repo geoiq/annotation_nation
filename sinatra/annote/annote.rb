@@ -1,49 +1,60 @@
-require 'rubygems'
-require 'vendor/rack/lib/rack'
-require 'vendor/sinatra/lib/sinatra'
-require 'erb'
-require 'geoiq-gem'
-require 'json'
-enable :inline_templates
+%w{ rubygems erb em-websocket uuid mq thin json geoiq-gem }.each {|gem| require gem}
+require File.dirname(__FILE__) +'/vendor/rack/lib/rack'
+require File.dirname(__FILE__) +'/vendor/sinatra/lib/sinatra'
+require File.dirname(__FILE__) +'/vendor/sinatra/lib/sinatra/base'
 
-get '/hi' do
-  "Hello World!"
-end
+uuid = UUID.new
 
-get '/' do
-  erb :index
-end
+EventMachine.run do
+  # 
+  # SINATRA
+  # 
+  class App < Sinatra::Base
+    enable :inline_templates
+    set :views, File.dirname(__FILE__) + '/views'
+    
+    get '/hi' do
+      "Hello World!"
+    end
 
-get '/comments/:id.json' do
-  dataset = Geoiq::Dataset.load(params[:id])
-  params.delete :id
+    get '/' do
+      erb :index
+    end
+    
+    get '/comments/:id.json' do
+      dataset = Geoiq::Dataset.load(params[:id])
+      params.delete :id
+
+      content_type :json
+
+      dataset.features(params).to_json
+    end
+    
+  end
+
+  # 
+  # EventMachine websockets
+  # 
+  EventMachine::WebSocket.start(:host => "0.0.0.0", :port => 8080) do |ws|
+    ws.onopen do
+      puts "WebSocket opened"
+
+      geocommons = MQ.new
+      geocommons.queue(uuid.generate).bind(geocommons.fanout('dataset_1')).subscribe do |t|
+        puts t
+        ws.send t
+      end
+    end
+
+    ws.onclose do
+      puts "WebSocket closed"
+    end
+  end
   
-  content_type :json
-
-  dataset.features(params).to_json
+  
+  puts "going to be running"
+  App.run!({:port => 3000})
+  puts "Running!"
 end
-
-
-
-
-__END__
-
-@@ layout
-<html><head><title>a title</title>
-<style>body{font-family: Arial, Helvetica, sans-serif;}</style>
-</head><body>
-<h1>header</h1>
-<%= yield %>
-<hr />
-<p>footer</p>
-</body></html>
-
-@@ index
-<h2>Useage</h2>
-<p>
-comments/{dataset_id}.json
-<br />
-with parameters  comments/{dataset_id}.json?limit=20
-</p>
 
 
