@@ -14,10 +14,13 @@ get '/' do
   erb :index
 end
 
-get '/comments/:id' do
+get '/comments/:id.json' do
   dataset = Geoiq::Dataset.load(params[:id])
+  params.delete :id
+  
   content_type :json
-  dataset.features.to_json
+
+  dataset.features(params).to_json
 end
 
 
@@ -36,8 +39,11 @@ __END__
 </body></html>
 
 @@ index
-<h2>Index</h2>
+<h2>Useage</h2>
 <p>
+comments/{dataset_id}.json
+<br />
+with parameters  comments/{dataset_id}.json?limit=20
 </p>
 
 
