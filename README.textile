@@ -15,6 +15,7 @@ h2. Dependencies
 * Thin (web server)
 * Sinatra
 * GeoIQ
+* DataMapper
 
 h3. Gems
 
@@ -24,7 +25,7 @@ Add RubyGems to your gem sources if you don't have it:
   
 Then install the following gems:
 
-  sudo gem install em-websocket uuid amqp thin
+  sudo gem install em-websocket uuid amqp thin dm-core dm-migrations
 
 h3. GeoIQ Ruby gem
 
