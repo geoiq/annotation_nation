@@ -44,10 +44,6 @@ EventMachine.run do
         erb :index
     end
     
-    get '/:id' do
-      erb :show
-    end
-
     get '/article/:id' do
       @map = Geoiq::Map.load(params[:id])
       @article = Article.get(params[:id])
