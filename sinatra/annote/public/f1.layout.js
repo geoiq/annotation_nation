@@ -15,7 +15,7 @@ if(typeof(F1)=='undefined') {F1 = {}}
     
     init: function(){
       _l = this //for console debugging only, do not use in code.
-      this.set_layout('nsew')
+      this.set_layout('e')
       
       $('.lower_tabs').tabs()
       
@@ -32,7 +32,6 @@ if(typeof(F1)=='undefined') {F1 = {}}
         },
         helper: function(){
           console.log([ "this" , this ])
-          zz = this
           // var selected = $('#dragSource input:checked').parents('li');
           // if (selected.length === 0) {
           //   selected = $(this);
@@ -96,11 +95,11 @@ if(typeof(F1)=='undefined') {F1 = {}}
         this.outer_layout = $('body').layout({
           north: this.layouts.defaults.north,
           center:  {paneSelector:'.f1-center-holder'},
-          east: { paneSelector: '.f1-layout-east'}
+          east:   {paneSelector:  '.f1-layout-east', size: 500, resizable: true},
         })
         this.inner_layout = $('.f1-center-holder').layout({
-          west:   {paneSelector:  '.f1-layout-west'},
-          south:  {paneSelector:  '.f1-layout-south'},
+          west:   {paneSelector:  '.f1-layout-west', size: 226, resizable: false},
+          south:  {paneSelector:  '.f1-layout-south', size: 250},
           center: {paneSelector:  '.f1-layout-center'}
         })
       },
