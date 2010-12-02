@@ -69,11 +69,11 @@ a:hover {
 #right .box {
     width: 264px;
     margin-top: 20px;
-    background: #D1F3D6 url(images/sidebox.top.gif) no-repeat top;
+    background: #D1F3D6 url(/images/sidebox.top.gif) no-repeat top;
 }
 
 #right .box1 {
-    background: url(images/sidebox.bottom.gif) no-repeat bottom;
+    background: url(/images/sidebox.bottom.gif) no-repeat bottom;
     padding: 15px 20px;
 }
 
@@ -82,13 +82,13 @@ a:hover {
 }
 
 .center_box {
-    background: #d1f3d6 url(images/centerbox.green.top.gif) no-repeat top left;
+    background: #d1f3d6 url(/images/centerbox.green.top.gif) no-repeat top left;
     width: 515px;
     margin: 0 0 10px 0;
 }
 
 .center_box2 {
-    background: url(images/centerbox.green.bottom.gif) no-repeat bottom left;
+    background: url(/images/centerbox.green.bottom.gif) no-repeat bottom left;
     padding: 10px;
 }
 
@@ -157,17 +157,17 @@ input.nice {
     height: 20px;
     border: 1px solid #999;
     padding: 4px 0 0 4px;
-    background: url(images/input.shadow.white.gif) top left no-repeat;
+    background: url(/images/input.shadow.white.gif) top left no-repeat;
 }
 
 textarea.nice {
     border: 1px solid #999;
     padding: 5px;
-    background: url(images/input.shadow.white.gif) top left no-repeat;
+    background: url(/images/input.shadow.white.gif) top left no-repeat;
 }
 
 input.nice:focus, textarea.nice:focus {
-    background: url(images/input.shadow.blue.gif) top left no-repeat;
+    background: url(/images/input.shadow.blue.gif) top left no-repeat;
 }
 
 .field_good img, .field_bad img, .field_loading img {
@@ -200,7 +200,7 @@ input.nice:focus, textarea.nice:focus {
 
 .submit.save {
     display: block;
-    background: url(images/b.save.gif) top left no-repeat;
+    background: url(/images/b.save.gif) top left no-repeat;
     width: 95px;
     height: 36px;
     float: right;
@@ -208,13 +208,13 @@ input.nice:focus, textarea.nice:focus {
 
 /*_________________________( Sign Up and Sign in )_ */
 #signup .show_signin {
-    background: url(images/b.signin_account.mk.gif) top no-repeat;
+    background: url(/images/b.signin_account.mk.gif) top no-repeat;
     width: 128px;
     height: 48px;
 }
 
 #signin .show_signup {
-    background: url(images/b.new_account.mk.gif) top no-repeat;
+    background: url(/images/b.new_account.mk.gif) top no-repeat;
     width: 128px;
     height: 48px;
 }
@@ -236,14 +236,14 @@ input.nice:focus, textarea.nice:focus {
 }
 
 #signup .submit {
-    background: url(images/b.signup.mk.gif);
+    background: url(/images/b.signup.mk.gif);
     width: 95px;
     height: 36px;
     margin-left: 221px;
 }
 
 #signin .submit {
-    background: url(images/b.signin.mk.gif);
+    background: url(/images/b.signin.mk.gif);
     width: 95px;
     height: 36px;
     margin-left: 221px;
@@ -292,9 +292,9 @@ input.nice:focus, textarea.nice:focus {
 	color: #666;
 }
 
-h2.search {text-indent: -500em; background: url(images/h1.find_a_map.gif) no-repeat; height: 23px;}
-h2.browse {text-indent:-500em; background:url(images/h1.browse.gif) no-repeat; height: 23px; }
-h2.yourmaps {text-indent: -500em; background: url(images/h1.your.maps.gif) no-repeat; height: 23px;}
+h2.search {text-indent: -500em; background: url(/images/h1.find_a_map.gif) no-repeat; height: 23px;}
+h2.browse {text-indent:-500em; background:url(/images/h1.browse.gif) no-repeat; height: 23px; }
+h2.yourmaps {text-indent: -500em; background: url(/images/h1.your.maps.gif) no-repeat; height: 23px;}
 
 #home_browse h2 {
   width: 100px; 
@@ -321,12 +321,12 @@ h2.yourmaps {text-indent: -500em; background: url(images/h1.your.maps.gif) no-re
 #start .l {width: 250px;}
 #start .r {width: 250px;}
 .b_find_data {
-	background: url(images/b.big.find.gif) no-repeat;
+	background: url(/images/b.big.find.gif) no-repeat;
 	width: 249px; height: 52px;
 	margin: 0 0 0.5em 0;
 }
 .b_upload_data {
-	background: url(images/b.big.upload.gif) no-repeat;
+	background: url(/images/b.big.upload.gif) no-repeat;
 	width: 249px; height: 52px;
 margin: 0 0 0.5em 0;
 }
@@ -334,7 +334,7 @@ p.learn_more {
   text-align: center;
 }
 #submit_search {
-    background: url(images/b.search.gif);
+    background: url(/images/b.search.gif);
     width: 91px;
     height: 37px;
 }
@@ -344,7 +344,7 @@ p.learn_more {
   font-size:medium;
 }
 #home_mine .view_maps {
-  background: url(images/b.my_maps.gif); 
+  background: url(/images/b.my_maps.gif); 
   height: 36px; width: 110px;
   position: absolute;
   right: 8px;
@@ -357,7 +357,7 @@ p.learn_more {
   display: block;
   text-indent: -500em;
   width: 488px; height: 25px;
-  background: url(images/h.pro_cartography.png) no-repeat;
+  background: url(/images/h.pro_cartography.png) no-repeat;
 }
 #marketing h2 {color: #223A25}
 #marketing  p {padding: 0.5em 0 2em 0; line-height: 1.5em;}
@@ -377,7 +377,7 @@ p.learn_more {
   padding: 0 0 20px 55px;
   width: 189px;
   background: 
-  url(images/g.icons.maker.png)
+  url(/images/g.icons.maker.png)
   no-repeat;
 }
 
@@ -389,7 +389,7 @@ p.learn_more {
   width: 185px;
   padding: 0 0 20px 55px;
   background: 
-  url(images/g.icons.finder.png)
+  url(/images/g.icons.finder.png)
   no-repeat;
 }
 .icon_formats {
@@ -513,14 +513,14 @@ p.learn_more {
 
 /* Make map button */
 .makemap  {
-    background: url(images/b.make_map.gif) top no-repeat;
+    background: url(/images/b.make_map.gif) top no-repeat;
     width: 130px;
     height: 36px;
 }
 
 /* Sign in button */
 .sign_in {
-	background: url(images/b.signin.gif) top no-repeat;
+	background: url(/images/b.signin.gif) top no-repeat;
 	width: 95px;
 	height: 36px;
 	margin-left: 221px;
@@ -530,7 +530,7 @@ p.learn_more {
 #sign_in input.button { display: none; }
 
 .sign_up {
-	background: url(images/b.signup.gif) top no-repeat;
+	background: url(/images/b.signup.gif) top no-repeat;
 	width: 95px;
 	height: 36px;
 	margin-left: 221px;
@@ -545,7 +545,7 @@ table.data_attributes img {vertical-align: middle;}
 	margin: 0 0 10px 0;
   display: block;
   text-indent: -500em;
-  background: url(images/b.kml_download.gif) no-repeat top left;
+  background: url(/images/b.kml_download.gif) no-repeat top left;
   height: 58px;
   width: 182px;
 }
@@ -560,12 +560,12 @@ table.data_attributes img {vertical-align: middle;}
 h2.greenlight {
   text-indent: -500em;
   width: 515px; height: 58px;
-  background: url(images/t.status.green.gif)
+  background: url(/images/t.status.green.gif)
 }
 h2.redlight {
   text-indent: -500em;
   width: 515px; height: 58px;
-  background: url(images/t.status.red.gif)
+  background: url(/images/t.status.red.gif)
 }
 .new_map .primary {
   margin: 0 0 10px 0;
@@ -748,7 +748,7 @@ text-decoration:none;
 /*________________________ ( Tumblelog )_ */
 #tumblelog h2 {margin: 0 0 0 10px; font-size: 12px; color: #333;}
 #tumblelog .entry {
-  background: url(images/bg.tumble.gif) no-repeat;
+  background: url(/images/bg.tumble.gif) no-repeat;
   position: relative;
   margin: 0 0 8px 6px;
   padding: 8px 0 0 0;
@@ -952,12 +952,12 @@ text-decoration:none;
 .capacity .remain {
   width: 250px; 
   background: 
-    url(images/bg.capacity.gif) 
+    url(/images/bg.capacity.gif) 
     no-repeat scroll 0% 100%;
 }
 .capacity .filled {
   width: 0%; background: 
-    url(images/bg.capacity.gif)
+    url(/images/bg.capacity.gif)
     no-repeat scroll 0% 0%;
 }
 
@@ -973,7 +973,7 @@ text-decoration:none;
 }
 
 .import_button {
-	background: url(images/import.png) repeat scroll 0 0;
+	background: url(/images/import.png) repeat scroll 0 0;
 	height: 18px;
 	width: 55px;
 }
@@ -1025,5 +1025,5 @@ text-decoration:none;
   top: 4px; right: 8px;
   text-indent: -500em;
   width: 12px; height: 12px;
-  background: url(images/fm.close.gif) no-repeat;
+  background: url(/images/fm.close.gif) no-repeat;
 }	

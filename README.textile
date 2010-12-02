@@ -53,4 +53,7 @@ Start the dataserver and include the GeoIQ dataset id, the update rate in second
 
 h3. Web server
 
-  _~/annotation_nation $_ ruby sinatra/annote/annote.rb
+  _~/annotation_nation $_ ruby sinatra/annote/annote.rb http://geoiq.local
+  
+  
+Finally, visit http://localhost:3000/article/_MAP_ID_

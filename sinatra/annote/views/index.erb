@@ -10,7 +10,7 @@
     ws = new WebSocket("ws://localhost:8080/");
     ws.onmessage = function(evt) {
       data = eval("(" + evt.data + ")");
-      var p = $("<div class='feature' style='display:none'><div class='content'>" + data.comment + " @ " + data.timestampe + "</div></div>");
+      var p = $("<div class='feature' style='display:none'><div class='content'> <a href='#' onclick='F1.Article.highlightComment(0,\"comment\",\""+data.comment+"\")'>" + data.comment + " @ " + data.timestampe + "</a></div></div>");
       if($('#features div.feature').size() > 15) {
         $('#features div.feature:last').slideDown(100, function() {
           $(this).remove();

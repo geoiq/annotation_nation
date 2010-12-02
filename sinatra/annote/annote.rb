@@ -5,6 +5,9 @@ require File.dirname(__FILE__) +'/vendor/sinatra/lib/sinatra/base'
 
 uuid = UUID.new
 
+GEOIQ_SERVER = ARGV.shift
+raise "need the GeoIQ server URL (e.g. http://geoiq.local) " if !GEOIQ_SERVER
+
 EventMachine.run do
   # 
   # SINATRA
@@ -15,7 +18,7 @@ EventMachine.run do
     set :public, File.dirname(__FILE__) + '/public'
     
     get '/hi' do
-      "Hello World!"
+      "Yo! How's your jellyfish?"
     end
 
     get '/' do
@@ -23,6 +26,7 @@ EventMachine.run do
     end
 
     get '/article/:id' do
+      @map = Geoiq::Map.load(params[:id])
       erb :index
     end
     
@@ -52,7 +56,6 @@ EventMachine.run do
 
       geocommons = MQ.new
       geocommons.queue(uuid.generate).bind(geocommons.fanout('dataset_1')).subscribe do |t|
-        puts t
         ws.send t
       end
     end

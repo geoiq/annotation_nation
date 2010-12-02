@@ -48,7 +48,7 @@ body .lower_tabs.ui-tabs .ui-tabs-nav li {
   margin-bottom: 4px !important
 }
 .lower_tabs li.ui-tabs-selected a {
-  background: url(images/bg.shiny.green.png) left center;
+  background: url(/images/bg.shiny.green.png) left center;
 }
 .lower_tabs li a img {
   margin: 0px 5px 0 0;
@@ -95,11 +95,11 @@ body .lower_tabs.ui-tabs .ui-tabs-nav li {
   cursor: move;
 }
 .panel_tabs .draggable_tab.ui-state-active a {
-  background: url(images/bg.shiny.green.png) left center;
+  background: url(/images/bg.shiny.green.png) left center;
 }
 
 /*.zpanel_header {
-  background: url(images/bg.shiny.green.png) left center;
+  background: url(/images/bg.shiny.green.png) left center;
   height: 21px;
   line-height: 21px;
   color: white;
@@ -182,7 +182,7 @@ body {
 }
 
 .fake_map {
-  background: url(images/fake_map.png);
+  background: url(/images/fake_map.png);
   width: 2370px; height: 1725px;
 }
 
@@ -195,7 +195,7 @@ body {
 }
 /*.ui-layout-resizer-west, 
 .ui-layout-resizer-east {
-  background: url(images/bg.layout.vertical.png) top left;
+  background: url(/images/bg.layout.vertical.png) top left;
 }*/
 
 
@@ -217,24 +217,24 @@ body {
 .hoverlinks a:hover {text-decoration: underline;}
 
 .flippy {
-  background: url(images/bg.flippy_header.png) top left;
+  background: url(/images/bg.flippy_header.png) top left;
   height: 44px;
   padding: 0px 0 0 10px;
 }
 .flippy span {
   padding: 5px 0;
   display: block;
-  background: url(images/bg.flippy_header.png) top right;
+  background: url(/images/bg.flippy_header.png) top right;
 
 }
 .flippy a {
   display: block;
   height: 26px;
-  background: url(images/b.flippy_arrow.png) no-repeat;
+  background: url(/images/b.flippy_arrow.png) no-repeat;
   padding: 8px 0 0 40px;
 }
 .flippy .on {
-  background: url(images/b.flippy_arrow.png) bottom left no-repeat;
+  background: url(/images/b.flippy_arrow.png) bottom left no-repeat;
 }
 
 .f1-button {
@@ -251,7 +251,7 @@ body {
 #header_master {
   height: 49px;
   min-width: 870px;
-  background-image: url(images/mhbg.gif);
+  background-image: url(/images/mhbg.gif);
   background-repeat: repeat-x;
   padding: 0 0px 0 0px;
   color: #ccc;
@@ -311,7 +311,7 @@ body {
 }
 
 #header_master .b_upload_data {
-  background: url(images/h.upload_data.png);
+  background: url(/images/h.upload_data.png);
   height: 26px;
   width: 105px;
   float: right;
@@ -319,7 +319,7 @@ body {
 
 
 #header_master .b_make_map {
-  background: url(images/h.make_map.png);
+  background: url(/images/h.make_map.png);
   height: 26px;
   width: 105px;
   float: right;
@@ -338,7 +338,7 @@ body {
   display: block;
   height: 26px;
   float: right;
-  background: url(images/h.dark_button.dropdown.png) top right no-repeat;
+  background: url(/images/h.dark_button.dropdown.png) top right no-repeat;
   font-family: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
   font-size: 12px;
   padding: 0 18px 0 0;
@@ -347,7 +347,7 @@ body {
   margin: 0 0px 0 2px
 }
 .mh_dd span {
-  background: url(images/h.dark_button.left.png);
+  background: url(/images/h.dark_button.left.png);
   display: block;
   height: 20px;
   padding: 6px 5px 0 24px;
@@ -358,13 +358,13 @@ body {
 }
 
 .dataset_actions {
-  background: url(images/bg.dataset.action.png) no-repeat;
+  background: url(/images/bg.dataset.action.png) no-repeat;
   padding-top: 8px;
   width: 182px;
   margin: 0 0 1em 0;
 }
 .dataset_actions ul {
-  background: url(images/bg.dataset.action.png) bottom;
+  background: url(/images/bg.dataset.action.png) bottom;
   padding: 0 8px 2px 8px;
   width: 166px;
 }
@@ -374,27 +374,27 @@ body {
   color: #5c6b72;
 }
 .make_map {
-  background: url(images/b.map_data.png);
+  background: url(/images/b.map_data.png);
   width: 182px;
   height: 37px;
   margin-bottom: 5px;
 }
 
 .analyze_data {
-  background: url(images/b.analyze_data.png);
+  background: url(/images/b.analyze_data.png);
   width: 182px;
   height: 37px;
   margin-bottom: 8px;
 }
 
 .run_analysis {
-	background: url(images/b.run.analysis.png);
+	background: url(/images/b.run.analysis.png);
 	width: 182px;
 	height: 59px;
 }
 
 .import_button {
-	background: url(images/import.png) repeat scroll 0 0;
+	background: url(/images/import.png) repeat scroll 0 0;
 	height: 18px;
 	width: 55px;
 }
@@ -407,11 +407,11 @@ body {
   top: 39px;
   width: 111px;
   text-align: left;
-  background: url(images/bg.dark_menu.bottom.png) bottom left;
+  background: url(/images/bg.dark_menu.bottom.png) bottom left;
   padding: 0 0 3px 0;
 }
 .user_menu_2 {
-  background: url(images/bg.dark_menu.top.png) top left;
+  background: url(/images/bg.dark_menu.top.png) top left;
   padding: 3px 0;
 }
 #user_menu li {
@@ -434,7 +434,7 @@ body {
 #notice, .notice {
   border: 1px solid #ccc;
   padding: 6px 8px 6px 43px; margin: 0 0 8px 0;
-  background: #ffd url(images/bg.notice.gif) no-repeat 8px center;
+  background: #ffd url(/images/bg.notice.gif) no-repeat 8px center;
 }
 .empty_page .notice {
   margin: 30px 30px 90px 20px;
@@ -571,7 +571,7 @@ body {
  left: 0;
  width: 100%;
  height: 100%;
- background-image: url(images/lightbox_overlay.png);
+ background-image: url(/images/lightbox_overlay.png);
  filter: alpha(opacity=80);
 }
 #lightbox[id]{
@@ -642,15 +642,15 @@ h1 small {
     margin: 0 2px 0 0;
     height: 26px;
     border: 1px solid #999;
-    background: url(images/input.shadow.white.gif) top left no-repeat;    
+    background: url(/images/input.shadow.white.gif) top left no-repeat;    
 }
 
 #submit_search, .submit_search {
-    background: url(images/b.search.blue.png);
+    background: url(/images/b.search.blue.png);
     width: 74px; height: 34px;
 }
 #submit_search.gray, .submit_search.gray {
-    background: url(images/b.search.gray.png);
+    background: url(/images/b.search.gray.png);
 }
 
 /*_________________________( Dialog )_ */
@@ -708,7 +708,7 @@ h1 small {
 .close_dialog {
   display: block; text-indent: -500em;
   height: 13px; width: 13px;
-  background: url(images/dialog_close.png) no-repeat;
+  background: url(/images/dialog_close.png) no-repeat;
   color: white;
   position: absolute;
   right: 10px;
@@ -870,54 +870,54 @@ ul.nice li {
 }
 
 .type_map {
-	background: url(images/bg.green.top.gif) no-repeat scroll top left;
+	background: url(/images/bg.green.top.gif) no-repeat scroll top left;
 }
 
 .type_map2 {
 	width: 564px;
-	background: transparent url(images/bg.green.bottom.gif) no-repeat scroll bottom left;
+	background: transparent url(/images/bg.green.bottom.gif) no-repeat scroll bottom left;
 }
 
 .type_overlay {
-	background: url(images/bg.blue.top.gif) no-repeat scroll top left;
+	background: url(/images/bg.blue.top.gif) no-repeat scroll top left;
 }
 
 .type_overlay2 {
 	width: 564px;
-	background: transparent url(images/bg.blue.bottom.gif) no-repeat scroll bottom left;
+	background: transparent url(/images/bg.blue.bottom.gif) no-repeat scroll bottom left;
 }
 
 .type_refinement {
-	background: url(images/bg.brown.top.gif) no-repeat scroll top left;
+	background: url(/images/bg.brown.top.gif) no-repeat scroll top left;
 }
 .type_refinement2 {
 	width: 564px;
-	background: transparent url(images/bg.brown.bottom.gif) no-repeat scroll bottom left;
+	background: transparent url(/images/bg.brown.bottom.gif) no-repeat scroll bottom left;
 }
 
 .type_incomplete {
-		background: url(images/bg.red.top.gif) no-repeat scroll top left;
+		background: url(/images/bg.red.top.gif) no-repeat scroll top left;
 }
 
 .type_incomplete2 {
 	width: 564px;
-	background: transparent url(images/bg.red.bottom.gif) no-repeat scroll bottom left;
+	background: transparent url(/images/bg.red.bottom.gif) no-repeat scroll bottom left;
 }
 
 
 .type_refinement_ol {
-	background: url(images/bg.brown_ol.top.gif) no-repeat scroll top left;
+	background: url(/images/bg.brown_ol.top.gif) no-repeat scroll top left;
 }
 .type_refinement_ol2 {
 	width: 564px;
-	background: transparent url(images/bg.brown_ol.bottom.gif) no-repeat scroll bottom left;
+	background: transparent url(/images/bg.brown_ol.bottom.gif) no-repeat scroll bottom left;
 }
 
 
 .rb {
 	display: block;
 	text-indent: -500em;
-	background: url(images/b.results.png) no-repeat 0px 0px;
+	background: url(/images/b.results.png) no-repeat 0px 0px;
 	height: 18px;
 	width: 90px;
 }
@@ -937,43 +937,43 @@ ul.nice li {
 .rb.b_map:hover        {background-position: -270px 100%;}
 
 .rb.b_select {
-  background: url(images/b.results.select.png) no-repeat 0px 0px;
+  background: url(/images/b.results.select.png) no-repeat 0px 0px;
 }
 
 .rb.b_no_can_select {
-  background: url(images/b.results.no.can.select.png) no-repeat 0px 0px;
+  background: url(/images/b.results.no.can.select.png) no-repeat 0px 0px;
 }
 
 .rb.b_select.disabled {
-  background: url(images/b.results.select.png) no-repeat 0px 0px;
+  background: url(/images/b.results.select.png) no-repeat 0px 0px;
 }
 
 .rb.b_analyze {
-  background: url(images/b.results.analyze.png) no-repeat 0px 0px;
+  background: url(/images/b.results.analyze.png) no-repeat 0px 0px;
 }
 
 .rb.b_next {
-  background: url(images/b.results.next.gif) no-repeat 0px 0px;
+  background: url(/images/b.results.next.gif) no-repeat 0px 0px;
 }
 .rb.b_finish {
-  background: url(images/b.results.finish.gif) no-repeat 0px 0px;
+  background: url(/images/b.results.finish.gif) no-repeat 0px 0px;
 }
 
 
 
 .b_add_to_map {
   width: 90px; height: 18px;
-  background: url(images/b.add_to_map.gif);
+  background: url(/images/b.add_to_map.gif);
 }
 .result .b_add_to_map.disabled {
-  background: url(images/b.results.add_off.gif);
+  background: url(/images/b.results.add_off.gif);
 }
 .result .b_map.disabled {
-  background: url(images/b.results.mm_off.gif);
+  background: url(/images/b.results.mm_off.gif);
 }
 
 .type_map .rb.b_view {
-  background: url(images/b.view.map.gif);
+  background: url(/images/b.view.map.gif);
   width: 77px;
 }
 .type_map .rb.b_view:hover {
@@ -1094,7 +1094,7 @@ div.menu a {
 
 /* __________________________( Common Buttons )_ */
 a.b_sign_up {
-   background: url(images/b.signup.png) no-repeat;
+   background: url(/images/b.signup.png) no-repeat;
    width: 95px;
    height: 16px;
    margin:3px 0;
@@ -1105,39 +1105,39 @@ a.b_sign_up:hover {
   background-position: left bottom !important;
 }
 a.learn_more {
-  background: url(images/b.learn.more.png) no-repeat;
+  background: url(/images/b.learn.more.png) no-repeat;
   width: 74px;
   height: 16px;
 }
 a.heart_feedback {
-  background: url(images/b.feedback.png) no-repeat;
+  background: url(/images/b.feedback.png) no-repeat;
   width: 96px;
   height: 19px;
 }
 
 .submit.save {
   display: block;
-  background: url(images/b.save.gif) top left no-repeat;
+  background: url(/images/b.save.gif) top left no-repeat;
   width: 95px; height: 36px;
   float: right;
 }
 
 .submit.continue {
   display: block;
-  background: url(images/b.continue.png) top left no-repeat;
+  background: url(/images/b.continue.png) top left no-repeat;
   width: 93px; height: 34px;
   float: right;
 }
 
 .submit.back {
   display: block;
-  background: url(images/b.back.png) top left no-repeat;
+  background: url(/images/b.back.png) top left no-repeat;
   width: 93px; height: 34px;
   float: right;
 }
 .submit.restart {
   display: block;
-  background: url(images/b.restart.png) top left no-repeat;
+  background: url(/images/b.restart.png) top left no-repeat;
   width: 93px; height: 34px;
   float: right;
 }
@@ -1149,7 +1149,7 @@ a.heart_feedback {
   text-align: center;
   background:
      #e0e9ee
-     url(images/bg.unified_footer.png)
+     url(/images/bg.unified_footer.png)
      top center repeat-x;
 }
 #footer {
@@ -1184,13 +1184,13 @@ a.heart_feedback {
 
 .softbox {
   height: 70px;
-  background: url(images/box.soft.bottom.png) no-repeat;
+  background: url(/images/box.soft.bottom.png) no-repeat;
 }
 .softbox_b {
   display: block;
   margin: 0 0 10px 0;
   padding: 7px 10px;
-  background: url(images/box.soft.top.png) no-repeat top;
+  background: url(/images/box.soft.top.png) no-repeat top;
 }
 .softbox a {
   text-decoration:none;
@@ -1295,7 +1295,7 @@ a.heart_feedback {
 .finder_express .search_box .l {width: 487px; height: 28px;}
 .finder_express .search_box .r {width: 84px;}
 .finder_express .ajax_indicator {
-  background: url(images/fm_loading.gif) no-repeat;
+  background: url(/images/fm_loading.gif) no-repeat;
   position: absolute;
   bottom: 10px;
   left: 10px;
@@ -1309,7 +1309,7 @@ a.heart_feedback {
 .about_finder_2 {
   padding: 6px 8px 6px 43px;
   margin: 0 0 8px 0;
-  background: #ffd url(images/bg.notice.gif) no-repeat 8px 3px;
+  background: #ffd url(/images/bg.notice.gif) no-repeat 8px 3px;
   margin: 2px;
 }
 .about_finder h1 {
@@ -1427,11 +1427,11 @@ ul.select li.on {
 .ajax_loading {
 	border: 1px solid #ccc;
   padding: 6px 8px 6px 43px; margin: 0 0 8px 0;
-  background: #eee url(images/fm_loading.gif) no-repeat 8px center;
+  background: #eee url(/images/fm_loading.gif) no-repeat 8px center;
 }
 
 .geojoin_loading {
-  background-image: url(images/notice.loading.gif) !important;
+  background-image: url(/images/notice.loading.gif) !important;
   background-repeat: no-repeat !important;
   background-position: 10px center !important;
   padding-left: 30px !important;
@@ -1493,7 +1493,7 @@ ul.preview li {
   top: 4px; right: 8px;
   text-indent: -500em;
   width: 12px; height: 12px;
-  background: url(images/fm.close.gif) no-repeat;
+  background: url(/images/fm.close.gif) no-repeat;
 }
 
 .module .module_no_close {
@@ -1567,7 +1567,7 @@ ul.preview li {
 
 .upload_top {
   position: relative;
-  background: url(images/upload.box.top.png);
+  background: url(/images/upload.box.top.png);
   margin: 0 0 0 -4px;
   height: 29px;
   padding-top: 10px;
@@ -1586,7 +1586,7 @@ ul.preview li {
   height: 19px;
   display: block;
   text-indent: -500em;
-  background: url(images/upload.back.png) no-repeat;
+  background: url(/images/upload.back.png) no-repeat;
   width: 115px;
 }
 
@@ -1594,7 +1594,7 @@ ul.preview li {
   position: relative;
   width: 511px;
   margin: 0 0 0 -4px;
-  background: url(images/upload.box.sides.png) left;
+  background: url(/images/upload.box.sides.png) left;
   padding: 0 4px;
 }
 .upload_bottom {
@@ -1603,25 +1603,25 @@ ul.preview li {
   height: 12px;
   left: 0px;
   bottom: 0px;
-  background: url(images/upload.box.bottom.png);
+  background: url(/images/upload.box.bottom.png);
 }
 
 .upload .choices {
   width: 250px;
 }
 .upload .choice {
-  background: url(images/upload.box.options.png) repeat-y;
+  background: url(/images/upload.box.options.png) repeat-y;
   border-bottom: 1px solid #ccc;
   position: relative;
   display: block;
 }
 .upload .choice:hover {
   display: block;
-  background: url(images/upload.option.selected.png) 0 50% repeat-y;
+  background: url(/images/upload.option.selected.png) 0 50% repeat-y;
 }
 .upload .choice a {
   display: block;
-  background: url(images/upload.arrow.png) 15px 50% no-repeat;
+  background: url(/images/upload.arrow.png) 15px 50% no-repeat;
   padding: 30px 0 30px 62px;
   font-size: 16px;
   font-weight: bold;
@@ -1711,12 +1711,12 @@ a.uploadify_cancel:hover {
   text-decoration: underline;
 }
 a.uploadify_next {
-  background: url(images/upload.next.png);
+  background: url(/images/upload.next.png);
   height: 24px;
   width: 67px;
 }
 a.uploadify_next.off {
-  background: url(images/upload.next.off.png) !important;
+  background: url(/images/upload.next.off.png) !important;
   cursor: default;
 }
 img#add_file_off {
@@ -1765,10 +1765,10 @@ img#add_file_off {
   font-size: 11px;
   text-shadow: 1px 1px 0px #409626;
   padding: 12px 10px;
-  background:url(images/clue.ll.top.png) no-repeat;
+  background:url(/images/clue.ll.top.png) no-repeat;
 }
 .clue_ll_bottom {
-  background:url(images/clue.ll.bottom.png) bottom left no-repeat;
+  background:url(/images/clue.ll.bottom.png) bottom left no-repeat;
   height: 20px;
 }
 
@@ -1835,26 +1835,26 @@ img#add_file_off {
   position: relative;
   width: 135px;
   padding-top: 4px;
-  background: url(images/clue.top.png) no-repeat;
+  background: url(/images/clue.top.png) no-repeat;
 }
 .raging_clue_inner {
   color: white;
   font-weight: bold;
   font-size: 12px;
   padding: 5px 15px 15px 15px;
-  background: url(images/clue.bottom.png) no-repeat bottom;
+  background: url(/images/clue.bottom.png) no-repeat bottom;
 }
 .raging_clue.arrow_left .arrow {
   position: absolute;
   left: -18px;
-  background: url(images/clue.left.png) no-repeat;
+  background: url(/images/clue.left.png) no-repeat;
   width: 24px;
   height: 43px;
 }
 .raging_clue.arrow_right .arrow {
   position: absolute;
   right: -18px;
-  background: url(images/clue.right.png) no-repeat;
+  background: url(/images/clue.right.png) no-repeat;
   width: 24px;
   height: 43px;
 }
@@ -1862,7 +1862,7 @@ img#add_file_off {
   position: absolute;
   top: -20px;
   left: 10px;
-  background: url(images/clue.up.png) no-repeat;
+  background: url(/images/clue.up.png) no-repeat;
   width: 43px;
   height: 24px;
 }
@@ -1870,7 +1870,7 @@ img#add_file_off {
   position: absolute;
   bottom: -16px;
   left: 42px;
-  background: url(images/clue.down.png) no-repeat;
+  background: url(/images/clue.down.png) no-repeat;
   width: 43px;
   height: 24px;
 }
@@ -1913,7 +1913,7 @@ ul.tabs.no_border {
   border-bottom: none;
   padding: 4px 16px;
   margin: 0 0 0 5px;
-  background: url(images/bg.tab.gif) repeat-x;
+  background: url(/images/bg.tab.gif) repeat-x;
   -moz-border-radius: 4px 4px 0 0;
   -webkit-border-radius: 4px 4px 0 0;
   border-radius: 4px 4px 0 0;
@@ -2020,7 +2020,7 @@ a.tab:hover {
   float: left;
 }
 .filter_box .submit_search {
-  background: url(images/b.filter_search.png);
+  background: url(/images/b.filter_search.png);
   float: left;
   width: 55px;
   height: 18px;
@@ -2167,7 +2167,7 @@ a.tab:hover {
 
 
 #visual_creator .breadcrumb_tabs {
-  background:url("images/viz.nav.bg.png") repeat-x scroll 0 -0px;
+  background:url("/images/viz.nav.bg.png") repeat-x scroll 0 -0px;
   border: 1px solid #ccc;
   border-width: 0 0 1px 0;
   font-size: 13px;
@@ -2196,7 +2196,7 @@ a.tab:hover {
   color: #999;
   padding: 0px 0 !important;
   margin: 0;
-  background: url(images/viz.nav.button.bg.png) 0 0 no-repeat;
+  background: url(/images/viz.nav.button.bg.png) 0 0 no-repeat;
 }
 .breadcrumb_tabs .chart { left: 126px; }
 .breadcrumb_tabs .data { left: 242px; }
@@ -2287,7 +2287,7 @@ a.tab:hover {
 	opacity: 1;
 	left: 0px;
 	top: 0px;
-	background: white url(images/ajax_loader_bar.gif) no-repeat center center;  
+	background: white url(/images/ajax_loader_bar.gif) no-repeat center center;  
 	z-index: 1010;
 }
 
@@ -2322,7 +2322,7 @@ a.tab:hover {
 
 .loading_div h1 {
   border: 1px solid #333;
-  background: white url(images/ajax_loader_bar.gif) no-repeat center center;
+  background: white url(/images/ajax_loader_bar.gif) no-repeat center center;
   padding: 10px;
 }
   
@@ -2399,7 +2399,7 @@ a.tab:hover {
 
 #visual_creator #chart_selection li {
   position: relative;
-  background: url(images/viz.icon.shadow.png) no-repeat;
+  background: url(/images/viz.icon.shadow.png) no-repeat;
   float:left;
   height: 85px;
   margin: 5px 0px 5px 0;
@@ -2488,7 +2488,7 @@ a.tab:hover {
 }
 
 .sort_icon {
-	background: transparent url("images/ui-icons_222222_256x240.png") no-repeat scroll;
+	background: transparent url("/images/ui-icons_222222_256x240.png") no-repeat scroll;
 	background-position:-128px -16px;
 	position: absolute;
 	right: 0px;
@@ -2640,7 +2640,7 @@ a.button:hover {
 /*_________________________( Big Search )_ */
 
 #big_search {
-  background: url(images/bg.big_search.png);
+  background: url(/images/bg.big_search.png);
   height: 59px;
   margin: 10px 0 0 0;
   padding: 20px 0 28px 0;
@@ -2654,7 +2654,7 @@ a.button:hover {
 
 #big_search form {
   position: relative;
-  background: url(images/bg.white_search.png) no-repeat;
+  background: url(/images/bg.white_search.png) no-repeat;
   width: 529px;
   height: 41px;
   padding: 9px 13px;
@@ -2665,7 +2665,7 @@ a.button:hover {
   top:9px;
   height: 41px;
   width: 87px;
-  background: url(images/b.search_grey.png);
+  background: url(/images/b.search_grey.png);
 }
 
 #big_search input.nice {
@@ -2676,7 +2676,7 @@ a.button:hover {
   margin: 0 2px 0 0;
   height: 32px;
   border: 1px solid #000;
-  background: url(images/input.shadow.white.gif) top left no-repeat;    
+  background: url(/images/input.shadow.white.gif) top left no-repeat;    
 }
 #big_search .actions {
   width: 363px;
@@ -2702,13 +2702,13 @@ a.button:hover {
   display: block;
 }
 #big_search .b_make_map {
-  background: url(images/b.map_grey.png);
+  background: url(/images/b.map_grey.png);
   width: 171px;
   height: 50px;
   margin-bottom: 2px;
 }
 #big_search .b_upload_data {
-  background: url(images/b.upload_grey.png);
+  background: url(/images/b.upload_grey.png);
   width: 171px;
   height: 50px;
   margin-bottom: 2px;
@@ -2756,7 +2756,7 @@ a.button:hover {
 
 #expert .dataset_select {
   display: block;
-  background: url(images/bar.shiny_blue.r.png) top right no-repeat;
+  background: url(/images/bar.shiny_blue.r.png) top right no-repeat;
   width: 557px;
   padding-right: 7px;
   text-decoration: none;
@@ -2766,7 +2766,7 @@ a.button:hover {
 }
 #expert .dataset_select2 {
   display: block;
-  background: url(images/bar.shiny_blue.l.png) top left no-repeat;
+  background: url(/images/bar.shiny_blue.l.png) top left no-repeat;
   padding: 13px 80px 12px 15px;
   font-size: 14px;
   font-weight: bold;
@@ -2777,7 +2777,7 @@ a.button:hover {
   display: block;
   width: 62px;
   height: 20px;
-  background: url(images/b.refine.change.png);
+  background: url(/images/b.refine.change.png);
 }
 
 #expert .controls .dataset_select {
@@ -2785,10 +2785,10 @@ a.button:hover {
 }
 
 #expert .refinement {
-  background: url(images/bg.expert.refinement.top.png) no-repeat;
+  background: url(/images/bg.expert.refinement.top.png) no-repeat;
 }
 #expert .refinement2 {
-  background: url(images/bg.expert.refinement.bottom.png) bottom left no-repeat;
+  background: url(/images/bg.expert.refinement.bottom.png) bottom left no-repeat;
 }
 
 #expert .refinement.selected {
@@ -2817,14 +2817,14 @@ a.button:hover {
 }
 
 #expert .more_refinements {
-  background: url(images/b.refine.library.png);
+  background: url(/images/b.refine.library.png);
   height: 24px;
   width: 144px;
   float:right;
 }
 
 #expert .build {
-  background: url(images/b.refine.build.png);
+  background: url(/images/b.refine.build.png);
   height: 24px;
   width: 105px;
   float:right;
@@ -2836,7 +2836,7 @@ a.button:hover {
   width: 532px;
   border: 1px solid #aeaeae;
   padding: 15px 15px;
-  background: url(images/bg.gray_fade.png) top repeat-x;
+  background: url(/images/bg.gray_fade.png) top repeat-x;
 }
 #expert .choice .whisper {
   display: block;
@@ -2850,11 +2850,11 @@ a.button:hover {
 }
 #expert .actions a {float: right;}
 #expert .actions .expert_submit {
-  background: url(images/b.refine.create.png);
+  background: url(/images/b.refine.create.png);
   height: 24px; width: 75px;
 }
 #expert .actions .back {
-  background: url(images/b.refine.back.png);
+  background: url(/images/b.refine.back.png);
   height: 24px; width: 75px;
   margin: 0 5px 0 0;
 }
@@ -2905,7 +2905,7 @@ a.button:hover {
   top: 0; right: 0;
 }
 #expert h3.num {
-  background: url(images/g.circle_nums.png) no-repeat;
+  background: url(/images/g.circle_nums.png) no-repeat;
   height: 22px;
   line-height: 22px;
   padding-left: 30px;
@@ -2946,7 +2946,7 @@ h3.num9 {background-position: 0 -601px !important;}
   height: 50px;
   width: 235px;
   border: 1px solid #999;
-  background: white url(images/ajax_loader_bar.gif) no-repeat center 30px;
+  background: white url(/images/ajax_loader_bar.gif) no-repeat center 30px;
   padding: 10px;
   text-transform: uppercase;
   font-size: 0.8em;
@@ -2954,12 +2954,12 @@ h3.num9 {background-position: 0 -601px !important;}
 }
 
 #expert .array_add {
-  background: url(images/b.refine.add.png);
+  background: url(/images/b.refine.add.png);
   width: 75px; height: 24px;
 }
 
 #expert .array_remove {
-  background: url(images/b.refine.remove.png);
+  background: url(/images/b.refine.remove.png);
   width: 75px; height: 24px;
 }
 

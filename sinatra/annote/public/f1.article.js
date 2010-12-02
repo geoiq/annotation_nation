@@ -9,7 +9,11 @@ if(typeof(F1)=='undefined') {F1 = {}}
     F1.Article.instances[options.id] = this;
     this.init()
   }
-  
+  F1.Article.highlightComment = function(layer, attr, value) {
+          map.swf.clearHighlights(layer);
+          var h="$["+attr+"] == '"+data[attr]+"'"; 
+          map.swf.addHighlight(layer,h);
+  }
   F1.Article.instances = {}
   F1.Article.prototype = {
     
