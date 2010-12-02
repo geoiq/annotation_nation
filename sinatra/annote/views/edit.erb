@@ -1,0 +1,13 @@
+    <ul>
+      <li class="draggable_tab"><a href="#tab_article">Article</a></li>
+    </ul>
+
+    <div id="tab_article" class="tab_article">
+      <form action="/article/<%= params[:id] %>" method="post"  >
+      <div id="article_text" class="article_text2">
+        <textarea id="text" name="text" cols="75" rows="25"><%= @article.text %></textarea>
+      </div>
+      <input type="submit" value="Save">
+      <a href="#" onclick="F1.Article.getStateForArticle(); return false">Capture View</a>
+      </form>
+    </div>

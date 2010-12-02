@@ -9,7 +9,23 @@ if(typeof(F1)=='undefined') {F1 = {}}
     F1.Article.instances[options.id] = this;
     this.init()
   }
-  
+  F1.Article.getStateForArticle = function() {
+      var extent = map.swf.getExtent();
+      $('#text').val($('#text').val()+'"":('+extent.west.toFixed(5) + "," + extent.south.toFixed(5) + "," + extent.east.toFixed(5) + "," + extent.north.toFixed(5)+')'); 
+  }
+
+  F1.Article.setState = function(options) {
+      if(options.extent) {
+          map.swf.setExtent(options.extent);
+      }
+      
+  }
+
+  F1.Article.highlightComment = function(layer, attr, value) {
+          map.swf.clearHighlights(layer);
+          var h="$["+attr+"] == '"+data[attr]+"'"; 
+          map.swf.addHighlight(layer,h);
+  }
   F1.Article.instances = {}
   F1.Article.prototype = {
     
