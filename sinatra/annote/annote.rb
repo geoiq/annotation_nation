@@ -19,6 +19,10 @@ EventMachine.run do
     end
 
     get '/' do
+      "[TODO: Put list of maps here, until then add /id to the url where id is the map_id]"
+    end
+    
+    get '/:id' do
       erb :index
     end
     
