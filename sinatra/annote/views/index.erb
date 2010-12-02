@@ -1,29 +1,16 @@
-  <div id="features">
-  </div>
-  <script>
-  $(document).ready(function(){
-    if(!("WebSocket" in window)) {
-      alert("Sorry, the build of your browser does not support WebSockets. Please use latest Chrome or Webkit nightly");
-      return;
-    }
-    
-    ws = new WebSocket("ws://localhost:8080/");
-    ws.onmessage = function(evt) {
-      data = eval("(" + evt.data + ")");
-      var p = $("<div class='feature' style='display:none'><div class='content'> <a href='#' onclick='F1.Article.highlightComment(0,\"comment\",\""+data.comment+"\")'>" + data.comment + " @ " + data.timestampe + "</a></div></div>");
-      if($('#features div.feature').size() > 15) {
-        $('#features div.feature:last').slideDown(100, function() {
-          $(this).remove();
-        });
-      }
-      $('#features').prepend(p);
-      p.slideDown(140);
-    };
-    ws.onclose = function() {
-      alert("socket closed");
-    };
-    ws.onopen = function() {
-      //alert("connected...");
-    };
-  });
-  </script>
+    <ul>
+      <li class="draggable_tab"><a href="#tab_article">Article</a></li>
+      <li class="draggable_tab"><a href="#tab_comments">Comments <span class="count">(##)</span></a></li>
+      <li class="draggable_tab"><a href="#tab_slides">Slides</a></li>
+    </ul>
+
+    <div id="tab_article" class="tab_article">
+      <div id="articles" class="articles_list">
+        <dl>
+        <% @articles.each do |article| %>
+          <dt><%= article.title %></dt>
+          <dd><%= article.text %></dd>
+        <% end %>
+        </dl>
+      </div>
+    </div>

@@ -54,7 +54,7 @@
   </div>
   
   <div id="toolbar" class="al_r">
-    <div class="l title"><%= @map.title %></div>
+    <div class="l title"><%= @map.nil? ? "All Articles" : @map.title %></div>
     <!-- <div class="r"><img src="/images/tmp.view_toggle.png">&nbsp;&nbsp;<img src="/images/tmp.save.png">&nbsp;&nbsp;<img src="/images/tmp.preview.png"></div> -->
   </div>
 </div>
@@ -72,21 +72,7 @@
 
 <div class="f1-layout-east droppable_vertical">  
   <div class="panel_tabs">
-    <ul>
-      <li class="draggable_tab"><a href="#tab_article">Article</a></li>
-      <li class="draggable_tab"><a href="#tab_comments">Comments <span class="count">(23)</span></a></li>
-      <li class="draggable_tab"><a href="#tab_slides">Slides</a></li>
-    </ul>
-
-    <div id="tab_article" class="tab_article">
-      <div id="article" class="article_text">Loading...</div>
-    </div>
-    <div id="tab_comments" class="tab_comments">
-      <%= yield  %>
-    </div>
-    <div id="tab_slides" class="tab_slides">
-      <div id="slides"></div>
-    </div>
+    <%= yield %>
   </div>
   
 
